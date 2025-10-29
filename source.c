@@ -9,7 +9,7 @@ int main(){
     char input[STACK_BUFFER];
     while(1){
         printf("\nurl: ");
-        scanf("%s", input);
+        scanf("%4095s", input);
 
         for(int i = 0; '\0' != input[i]; i++){
             char y = input[i];
