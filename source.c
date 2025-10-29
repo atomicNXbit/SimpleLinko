@@ -6,11 +6,11 @@
 int main(){
     printf("SimpleLinko\nPID: %d\nSTACK_BUFFER: %d\n", getpid(), STACK_BUFFER);
     printf("CTRL + C to quit.\n");
-
+    char input[STACK_BUFFER];
     while(1){
-        char input[STACK_BUFFER];
         printf("\nurl: ");
         scanf("%s", input);
+
         for(int i = 0; '\0' != input[i]; i++){
             char y = input[i];
             if(y != 46 && y != 58){
@@ -27,7 +27,7 @@ int main(){
         printf("\n%s", input);
     }
     pause();
-
+    
     return 0;
     
 }
